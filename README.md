@@ -49,4 +49,4 @@ python train.py --model mlic --arch resnet101 --data voc2007 --loss asl --batch-
 python train.py --model mlic --arch resnet101 --data mscoco --loss asl --batch-size 128 --lr 0.00009 --lamda 0.4 --pos
 python train.py --model mlic --arch resnet101 --data nuswide --loss asl --batch-size 128 --lr 0.00009 --lamda 0.05 --pos
 ```
-Note the choice for `--model` can be `tresnet_l`, `tresnet_l21k`, `vit_large_patch16_224`, `vit_large_patch16_224_in21k` and `swin_large_patch4_window12_384_in22k`.
+Note the choice for `--model` can be `tresnet_l`, `tresnet_l21k`, `vit_large_patch16_224`, `vit_large_patch16_224_in21k` and `swin_large_patch4_window12_384_in22k`. One can use `CUDA_VISIBLE_DEVICES=0,1,2,3` before the training commands to enable distributed data parallel training.
