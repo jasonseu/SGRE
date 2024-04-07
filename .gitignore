@@ -1,0 +1,17 @@
+datasets
+experiments
+data
+
+
+**/__pycache__
+*.pyc
+.vscode
+
+infer2.py
+
+eval_csra.py
+scripts/prepare_coco.py
+count.py
+example.py
+evaluate2.py
+ex.py
