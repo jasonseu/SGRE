@@ -1,10 +1,3 @@
-# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Created by: jasonseu
-# Created on: 2021-8-9
-# Email: zhuxuelin23@gmail.com
-#
-# Copyright © 2021 - CPSS Group
-# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 import os
 import yaml
 import warnings
@@ -53,6 +46,11 @@ class Inference(object):
             img = batch['img'].cuda()
             target = batch['target'].numpy()[0]
             img_path = batch['img_path'][0]
+            if 'COCO_val2014_000000574769' not in img_path and 'COCO_val2014_000000540172' not in img_path and \
+                'COCO_val2014_000000000241' not in img_path and 'COCO_val2014_000000002431' not in img_path and \
+                'COCO_val2014_000000002477' not in img_path and 'COCO_val2014_000000003091' not in img_path and \
+                'COCO_val2014_000000006608' not in img_path and 'COCO_val2014_000000009527' not in img_path:
+                continue
             
             ret = self.ema_model(img)
             score = torch.sigmoid(ret['logits']).cpu().numpy()
@@ -94,7 +92,7 @@ class Inference(object):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--exp-dir', type=str, default='experiments/mlic_mscoco/exp1')
+    parser.add_argument('--exp-dir', type=str, default='')
     args = parser.parse_args()
     cfg_path = os.path.join(args.exp_dir, 'config.yaml')
     if not os.path.exists(cfg_path):
