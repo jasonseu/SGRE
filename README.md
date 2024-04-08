@@ -58,11 +58,10 @@ python train.py --model mlic --arch resnet101 --data voc2007 --loss asl --batch-
 python train.py --model mlic --arch resnet101 --data mscoco --loss asl --batch-size 128 --lr 0.00009 --lamda 0.4 --pos
 python train.py --model mlic --arch resnet101 --data nuswide --loss asl --batch-size 128 --lr 0.00009 --lamda 0.05 --pos
 ```
-Note that the choice for `--arch` can be `tresnet_l`, `tresnet_l21k`, `vit_large_patch16_224`, `vit_large_patch16_224_in21k` and `swin_large_patch4_window12_384_in22k`. One can use `CUDA_VISIBLE_DEVICES=0,1,2,3` before the training commands to enable distributed data parallel training with available GPUs.
-
+Note that the choice for `--arch` can be `tresnet_l`, `tresnet_l21k`, `vit_large_patch16_224`, `vit_large_patch16_224_in21k` and `swin_large_patch4_window12_384_in22k`. One can add `CUDA_VISIBLE_DEVICES=0,1,2,3` in front of the commands to enable distributed data parallel training with available GPUs.
 ### Evaluation
 
-Pre-trained models are available in [link](https://pan.seu.edu.cn:443/link/02BC4A5E4864961024D99D1BE743249D). Download and put them in the `experiments` folder, then one can use follow commands to reproduce results reported in paper.
+Pre-trained models are available in [link](https://pan.seu.edu.cn:443/link/02BC4A5E4864961024D99D1BE743249D). Download and put them in the `experiments` folder, then one can use following commands to reproduce results reported in paper.
 ```bash
 python evaluate.py --exp-dir experiments/mlic_mscoco/exp1
 ```
