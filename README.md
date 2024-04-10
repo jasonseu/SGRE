@@ -63,7 +63,9 @@ Note that the choice for `--arch` can be `tresnet_l`, `tresnet_l21k`, `vit_large
 
 Pre-trained models are available in [link](https://pan.seu.edu.cn:443/link/02BC4A5E4864961024D99D1BE743249D). Download and put them in the `experiments` folder, then one can use following commands to reproduce results reported in paper.
 ```bash
-python evaluate.py --exp-dir experiments/mlic_mscoco/exp1
+python evaluate.py --exp-dir experiments/mlic_mscoco/exp1 # evaluation for ResNet101 on MSCOCO
+python evaluate.py --exp-dir experiments/mlic_mscoco/exp2 # evaluation for TResNetL on MSCOCO
+python evaluate.py --exp-dir experiments/mlic_mscoco/exp3 # evaluation for ViT-large on MSCOCO
 ```
 
 ### Visualization
