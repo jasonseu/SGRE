@@ -73,3 +73,8 @@ To visualize the attention heatmaps in the paper, run the following command and 
 ```bash
 python infer.py --exp-dir experiments/mlic_mscoco/exp1
 ```
+
+### Citation
+```
+
+```
