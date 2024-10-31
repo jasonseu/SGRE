@@ -83,5 +83,6 @@ python infer.py --exp-dir experiments/mlic_mscoco/exp1
   year={2024},
   volume={34},
   number={10},
-  pages={10036-10049},
+  pages={10036-10049}
+}
 ```
