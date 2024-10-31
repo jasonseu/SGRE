@@ -76,7 +76,7 @@ python infer.py --exp-dir experiments/mlic_mscoco/exp1
 
 ### Citation
 ```
-@ARTICLE{zhu2024semantic,
+@article{zhu2024semantic,
   title={Semantic-Guided Representation Enhancement for Multi-Label Image Classification}, 
   author={Zhu, Xuelin and Li, Jianshu and Cao, Jiuxin and Tang, Dongqi and Liu, Jian and Liu, Bo},
   journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
