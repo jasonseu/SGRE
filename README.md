@@ -1,7 +1,7 @@
 ## Semantic-Guided Representation Enhancement for Multi-Label Image Classification
 
 ### Introduction
-This is an official PyTorch implementation of Semantic-Guided Representation Enhancement for Multi-Label Image Classification, IEEE Transactions on Circuits and Systems for Video Technology 2024. [[paper]]()
+This is an official PyTorch implementation of Semantic-Guided Representation Enhancement for Multi-Label Image Classification, IEEE Transactions on Circuits and Systems for Video Technology 2024. [[paper]](https://ieeexplore.ieee.org/document/10546293)
 
 ![alt tsformer](src/framework.png)
 
@@ -76,5 +76,12 @@ python infer.py --exp-dir experiments/mlic_mscoco/exp1
 
 ### Citation
 ```
-
+@ARTICLE{zhu2024semantic,
+  title={Semantic-Guided Representation Enhancement for Multi-Label Image Classification}, 
+  author={Zhu, Xuelin and Li, Jianshu and Cao, Jiuxin and Tang, Dongqi and Liu, Jian and Liu, Bo},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  year={2024},
+  volume={34},
+  number={10},
+  pages={10036-10049},
 ```
